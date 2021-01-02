@@ -3,6 +3,9 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Главная :: Доска объявлений</title>
+            {% for rubric in rubrics %}
+                <a href="{% url 'by_rubric' rubric.pk %}">{{rubric.name}}</a>
+            {% endfor %}
 	</head>
 	<body>
 		<h1>Обьявления</h1>
