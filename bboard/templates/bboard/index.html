@@ -9,6 +9,7 @@
 	</head>
 	<body>
 		<h1>Обьявления</h1>
+		<a href="{% url 'add' %}">Добавить</a>
 		{% for bb in bbs %}
 		<div>
 			<h2>{{bb.title}}</h2>
